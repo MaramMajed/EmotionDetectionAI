@@ -42,35 +42,13 @@ Softmax output layer
 
 This design balances performance and computational efficiency, making it suitable for Colab and low-resource environments.
 
-📂 Dataset Structure
-
-The unified dataset is organized as follows:
-
-final_dataset/
-├── train/
-│   ├── angry/
-│   ├── disgust/
-│   ├── fear/
-│   ├── happy/
-│   ├── sad/
-│   ├── surprise/
-│   ├── neutral/
-│   ├── contempt/
-│   └── confused/
-└── test/
-    └── (same structure as train)
-
-FER-2013 provides the base 7 emotions
-
-RAF-DB is mapped to extend emotions (e.g., contempt, confused)
-
     All images are converted to grayscale and resized to 48×48
 
 ## Installation & Setup (Google Colab)
 
 pip install tensorflow opencv-python-headless pandas kagglehub
 
-Datasets are downloaded directly inside Colab using kagglehub or manually uploaded.
+Datasets are downloaded directly inside Colab (manually uploaded).
 
 ## Training
 
@@ -90,7 +68,7 @@ Training Accuracy: ~69%
 
 Validation Accuracy: ~55%
 
-Note: Performance is limited by class imbalance and label ambiguity across datasets.
+    Note: Performance is limited by class imbalance and label ambiguity across datasets.
 
 ## 📊 Evaluation
 
